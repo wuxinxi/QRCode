@@ -1,0 +1,72 @@
+.mui-input-group {
+    margin-top: 10px;
+}
+
+.mui-input-group:first-child {
+    margin-top: 20px;
+}
+
+.mui-input-group label {
+    width: 22%;
+}
+
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+    width: 78%;
+}
+
+.mui-checkbox input[type=checkbox],
+.mui-radio input[type=radio] {
+    top: 6px;
+}
+
+.mui-content-padded {
+    margin-top: 25px;
+}
+
+.mui-btn {
+    padding: 10px;
+}
+
+.link-area {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.spliter {
+    color: #bbb;
+    padding: 0px 8px;
+}
+
+#loading {
+    display: none;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.ui-page-login,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.mui-content{height: 100%;}
+
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0%;
+    bottom: 1%;
+    font: normal normal normal 12px/12px sans-serif;
+    color: #555;
+}

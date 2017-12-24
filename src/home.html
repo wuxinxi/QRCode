@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>公交二维码</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/mui.min.css"  type="text/css" rel="stylesheet" />
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/back.js"></script>
+    <script>
+        function line() {
+            window.location.href="line.html";
+        }
+
+        function ftp() {
+            window.location.href="ftp.html";
+        }
+
+        function mch() {
+            window.location.href="mch.html";
+        }
+
+        function ip() {
+            window.location.href="ip.html";
+        }
+
+    </script>
+</head>
+<body class="mui-content">
+
+<header class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">主页</h1>
+</header>
+
+<button class="mui-btn mui-btn-block mui-btn-primary" onclick="line()" >线路参数设置</button >
+
+<button class="mui-btn mui-btn-block mui-btn-primary" onclick="ftp()" >FTP设置</button>
+
+<button  class="mui-btn mui-btn-block mui-btn-primary" onclick="mch()" >商户设置</button>
+
+<button  class="mui-btn mui-btn-block mui-btn-primary" onclick="ip()" >服务器设置</button>
+
+<span class="copyright">深圳小兵©<script>document.write(new Date().getFullYear())</script></span>
+</body>
+</html>

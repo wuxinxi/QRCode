@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公交二维码</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/mui.min.css"  type="text/css" rel="stylesheet" />
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/back.js"></script>
+    <script src="js/ip.js"></script>
+</head>
+<body class="mui-content">
+
+<header class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">IP设置</h1>
+    <h1 class="actionBar"><-</h1>
+</header>
+
+<input class="ip" type="text" placeholder="IP" />
+
+<button id="qr" class="mui-btn mui-btn-block mui-btn-primary">生成二维码</button >
+
+<div class="layerBox none">
+    <div id="QRCodeBox"></div>
+</div>
+
+<span class="copyright">深圳小兵©<script>document.write(new Date().getFullYear())</script></span>
+</body>
+</html>
