@@ -48,8 +48,8 @@ body {
 
 
 .actionBar{
-	height: 44px;
-	line-height: 40px;
+	height: 32px;
+	line-height: 32px;
 	width: 100%;
 	color: #000;
 	font-family: "黑体";
@@ -60,12 +60,13 @@ body {
 	top:0;
 	left:10px;
 	/*背景色渐变*/
-	background: linear-gradient(to bottom right, #00000000, #10000000);
+	background:url(../img/back_.png) no-repeat;
+	/*background: linear-gradient(to bottom right, #00000000, #10000000);*/
 }
 
 .actionDis{
-	height: 44px;
-	line-height: 40px;
+	height: 32px;
+	line-height: 32px;
 	width: 100%;
 	color: #000;
 	font-family: "黑体";
@@ -75,7 +76,6 @@ body {
 	z-index:999;
 	top:0;
 	left:90%;
-	/*背景色渐变*/
 	background:url(../img/back.png) no-repeat;
 }
 

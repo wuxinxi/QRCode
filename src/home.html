@@ -3,33 +3,37 @@
 <head>
     <meta charset="utf-8">
     <title>公交二维码</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <link href="css/common.css" rel="stylesheet"/>
-    <link href="css/mui.min.css"  type="text/css" rel="stylesheet" />
+    <link href="css/mui.min.css" type="text/css" rel="stylesheet"/>
     <script src="js/jquery-2.1.0.js"></script>
     <script src="js/touch.js"></script>
     <script src="js/back.js"></script>
-    <script>
+
+    <script type="text/javascript" charset="utf-8">
+
 
         function line() {
-            window.location.href="line.html";
+            window.location.href = "line.html";
         }
 
         function ftp() {
-            window.location.href="ftp.html";
+            window.location.href = "ftp.html";
         }
 
         function mch() {
-            window.location.href="mch.html";
+            window.location.href = "mch.html";
         }
 
         function ip() {
-            window.location.href="ip.html";
+            window.location.href = "ip.html";
         }
 
         function back() {
-            var con=confirm("是否退出登录?");
-            if (con){
+
+            var con = confirm("是否退出登录?");
+            if (con) {
                 localStorage.removeItem("time");
                 window.location.reload(true);
             }
@@ -40,25 +44,25 @@
 </head>
 <body class="mui-content">
 
-<header class="mui-bar mui-bar-nav">
+<header class="mui-bar mui-bar-nav mui-icon ">
     <h1 class="mui-title">主页</h1>
-    <h2 class="actionDis" onclick="back()"></h2>
+    <h1 class="actionDis"  onclick="back()"></h1>
 </header>
 
-<button class="mui-btn mui-btn-block mui-btn-primary" onclick="line()" >线路参数设置</button >
+<button class="mui-btn mui-btn-block mui-btn-primary" onclick="line()">线路参数设置</button>
 
-<button class="mui-btn mui-btn-block mui-btn-primary" onclick="ftp()" >FTP设置</button>
+<button class="mui-btn mui-btn-block mui-btn-primary" onclick="ftp()">FTP设置</button>
 
-<button class="mui-btn mui-btn-block mui-btn-primary" onclick="mch()" >商户设置</button>
+<button class="mui-btn mui-btn-block mui-btn-primary" onclick="mch()">商户设置</button>
 
-<button class="mui-btn mui-btn-block mui-btn-primary" onclick="ip()" >服务器设置</button>
+<button class="mui-btn mui-btn-block mui-btn-primary" onclick="ip()">服务器设置</button>
 
 <script>
-    var type=localStorage.getItem("login-type");
-    if (type=="0"){
-        var button_ftp=document.getElementsByTagName("button")[1];
-        var button_mch=document.getElementsByTagName("button")[2];
-        var button_ip=document.getElementsByTagName("button")[3];
+    var type = localStorage.getItem("login-type");
+    if (type == "0") {
+        var button_ftp = document.getElementsByTagName("button")[1];
+        var button_mch = document.getElementsByTagName("button")[2];
+        var button_ip = document.getElementsByTagName("button")[3];
         button_ftp.style.display = "none";
         button_mch.style.display = "none";
         button_ip.style.display = "none";
