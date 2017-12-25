@@ -5,6 +5,7 @@ $(function(){
 
         var user=$("#account").val().toString();
         var psw=$("#password").val().toString();
+        var select=$(".mui-select").val().toString();
         if (!user||!psw){
             alert("参数缺省[10001]");
         }else {
@@ -21,9 +22,10 @@ $(function(){
                 success:function (data) {
                     console.log(data);
                     if (data.rescode=="0000"){
-                        alert("登陆成功");
                         $('#loading').css("display","none");
-                        localStorage.setItem('token', getNowFormatDate());
+                        var longTime=(new Date().getTime());
+                        localStorage.setItem('time',longTime);
+                        localStorage.setItem("login-type",select);
                         window.location.href="home.html";
                     }else {
                         var result=data.result;
