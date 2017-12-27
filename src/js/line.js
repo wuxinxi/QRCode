@@ -16,6 +16,8 @@ $(function () {
             return;
         }
 
+        var key=localStorage.getItem("token");
+        // s = 'szxb{"l":' + '"' + l + '"' + ',"n":' + '"' + n + '"' + ',"k":' + '"' + key+ '"' + '}';
         s = 'szxb{"l":' + '"' + l + '"' + ',"n":' + '"' + n + '"' + '}';
 
 

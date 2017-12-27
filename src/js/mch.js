@@ -19,7 +19,9 @@ $(function() {
         }
 
 
-        s = 'szxb_mch{"m":' + '"' + mch + '"' + ',"c":' + '"' + city + '"' + ',"o":' + '"' + utf16to8(ordesc) + '"' + '}';
+        var key=localStorage.getItem("token");
+
+        s = 'szxb_mch{"m":' + '"' + mch + '"' + ',"c":' + '"' + city + '"' + ',"o":' + '"' + utf16to8(ordesc) + '"' + ',"k":' + '"' + key + '"' + '}';
 
         $("#QRCodeBox").qrcode({
             render: "canvas", //table方式
