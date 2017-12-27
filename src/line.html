@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>公交二维码</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <link href="css/common.css" rel="stylesheet"/>
-    <link href="css/mui.min.css"  type="text/css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/mui.min.css" type="text/css" rel="stylesheet"/>
     <script src="js/jquery-2.1.0.js"></script>
     <script src="js/touch.js"></script>
     <script src="js/qrcode.min.js"></script>
@@ -17,12 +19,12 @@
 
 <header class="mui-bar mui-bar-nav mui-icon">
     <h1 class="mui-title">线路设置</h1>
-    <h1 class="actionBar"></h1>
+    <span id="actionBar" class="fa fa-angle-left backPosition"></span>
 </header>
 
-<input class="myno" type="number" placeholder="请输入自编号" />
-<input class="lineCode" type="number" placeholder="请输入线路号" />
-<button id="qr" class="mui-btn mui-btn-block mui-btn-primary">生成二维码</button >
+<input class="myno" type="number" placeholder="请输入自编号"/>
+<input class="lineCode" type="number" placeholder="请输入线路号"/>
+<button id="qr" class="mui-btn mui-btn-block mui-btn-primary">生成二维码</button>
 
 <div class="layerBox none">
     <div id="QRCodeBox"></div>

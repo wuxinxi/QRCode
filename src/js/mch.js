@@ -14,7 +14,7 @@ $(function() {
         var ordesc = $(".ordesc").val().toString();
 
         if(mch.length==0||city.length==0||ordesc.length==0){
-            alert("参数不能缺省");
+            alert("参数缺省[10001]");
             return;
         }
 

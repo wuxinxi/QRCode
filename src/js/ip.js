@@ -12,7 +12,7 @@ $(function() {
         var ip= $(".ip").val().toString();
 
         if(ip.length==0){
-            alert("参数不能缺省");
+            alert("参数缺省[10001]");
             return;
         }
 

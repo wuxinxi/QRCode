@@ -20,7 +20,7 @@ if(token == null){
 
 
 $(function () {
-    $(".actionBar").on('tap', function () {
+    $("#actionBar").on('tap', function () {
         window.history.go(-1);
     });
 })

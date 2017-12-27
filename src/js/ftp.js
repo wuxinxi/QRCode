@@ -15,7 +15,7 @@ $(function() {
         var psw = $(".psw").val().toString();
 
         if(ip.length==0||port.length==0||user.length==0||psw.length==0){
-            alert("参数不能缺省");
+            alert("参数缺省[10001]");
             return;
         }
 
