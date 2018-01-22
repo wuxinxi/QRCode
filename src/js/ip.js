@@ -16,8 +16,9 @@ $(function() {
             return;
         }
 
+        var key=localStorage.getItem("token");
 
-        s = 'szxb_ip{"ip":' + '"' + ip + '"' + '}';
+        s = 'szxb_ip{"ip":' + '"' + ip + '"' + '"k":' + '"' + key + '"' + '}';
 
         $("#QRCodeBox").qrcode({
             render: "canvas", //table方式

@@ -19,9 +19,14 @@ $(function () {
             return;
         }
 
-        var key=localStorage.getItem("token");
+        var key = localStorage.getItem("token");
 
-        s = 'szxb_ftp{"i":' + '"' + ip + '"' + ',"p":' + '"' + port + '"' + ',"u":' + '"' + user + '"' + ',"psw":' + '"' + psw + '"' + ',"k":' + '"' + key + '"' + '}';
+        s = 'szxb_ftp{"i":' + '"' + ip + '"'
+            + ',"p":' + '"' + port + '"'
+            + ',"u":' + '"' + user + '"'
+            + ',"psw":' + '"' + psw + '"'
+            + ',"k":' + '"' + key + '"'
+            + '}';
 
         $("#QRCodeBox").qrcode({
             render: "canvas", //table方式

@@ -22,13 +22,29 @@
     <span id="actionBar" class="fa fa-angle-left backPosition"></span>
 </header>
 
+<div>
+    <select name="login-type" class="mui-select" onchange="show(this.options[this.options.selectedIndex].value)">
+        <option value="0">单票制</option>
+        <option value="1">多票制</option>
+    </select>
+</div>
+
+<div>
+    <select name="update-type" class="mui-select" onchange="show(this.options[this.options.selectedIndex].value)">
+        <option value="0">更新线路</option>
+        <option value="1">更新</option>
+    </select>
+</div>
+
+<input class="lineName" type="text" placeholder="线路名"/>
 <input class="myno" type="number" placeholder="请输入自编号"/>
-<input class="lineCode" type="number" placeholder="请输入线路号"/>
+<input class="lineCode" type="number" placeholder="设置线路号"/>
 <button id="qr" class="mui-btn mui-btn-block mui-btn-primary">生成二维码</button>
 
 <div class="layerBox none">
     <div id="QRCodeBox"></div>
 </div>
+
 
 <span class="copyright">深圳小兵©<script>document.write(new Date().getFullYear())</script></span>
 </body>
