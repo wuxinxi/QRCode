@@ -30,6 +30,10 @@
             window.location.href = "ip.html";
         }
 
+        function time() {
+            window.location.href = "time.html";
+        }
+
         function back() {
 
             var con = confirm("是否退出登录?");
@@ -51,6 +55,8 @@
 
 <button class="mui-btn mui-btn-block mui-btn-primary" onclick="line()">线路参数设置</button>
 
+<button class="mui-btn mui-btn-block mui-btn-primary" onclick="time()">校准时间</button>
+
 <button class="mui-btn mui-btn-block mui-btn-primary" onclick="ftp()">FTP设置</button>
 
 <button class="mui-btn mui-btn-block mui-btn-primary" onclick="mch()">商户设置</button>
@@ -60,9 +66,9 @@
 <script>
     var type = localStorage.getItem("login-type");
     if (type != "11") {
-        var button_ftp = document.getElementsByTagName("button")[1];
-        var button_mch = document.getElementsByTagName("button")[2];
-        var button_ip = document.getElementsByTagName("button")[3];
+        var button_ftp = document.getElementsByTagName("button")[2];
+        var button_mch = document.getElementsByTagName("button")[3];
+        var button_ip = document.getElementsByTagName("button")[4];
         button_ftp.style.display = "none";
         button_mch.style.display = "none";
         button_ip.style.display = "none";

@@ -9,6 +9,16 @@ $(function () {
     var s = "";
     $("#qr").on('tap', function () {
 
+
+
+        var str = prompt("请输入安全码");
+        if (str.length == 0 || str !== "0000") {
+            alert("安全码错误[0001]");
+            return;
+        }
+
+
+
         var ip = $(".ip").val().toString();
         var port = $(".port").val().toString();
         var user = $(".user").val().toString();

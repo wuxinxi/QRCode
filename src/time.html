@@ -12,32 +12,45 @@
     <script src="js/touch.js"></script>
     <script src="js/qrcode.min.js"></script>
     <script src="js/back.js"></script>
-    <script src="js/line.js"></script>
+    <script src="js/time.js"></script>
 </head>
 
 <body class="mui-content">
 
 <header class="mui-bar mui-bar-nav mui-icon">
-    <h1 class="mui-title">线路设置</h1>
+    <h1 class="mui-title">校准时间</h1>
     <span id="actionBar" class="fa fa-angle-left backPosition"></span>
 </header>
 
 <div>
-    <select name="login-type" class="mui-select">
-        <option value="0">单票制</option>
-        <option value="1">多票制</option>
+    <select name="login-type" class="mui-select" onchange="show(this.options[this.options.selectedIndex].value)">
+        <option value="0">系统时间</option>
+        <option value="1">自定义时间</option>
     </select>
 </div>
 
-<input class="lineName" type="text" placeholder="线路名"/>
-<input class="myno" type="number" placeholder="请输入自编号"/>
-<input class="lineCode" type="number" placeholder="设置线路号"/>
+<input class="date" type="datetime-local">
+
 <button id="qr" class="mui-btn mui-btn-block mui-btn-primary">生成二维码</button>
 
 <div class="layerBox none">
     <div id="QRCodeBox"></div>
 </div>
 
+
+<script>
+
+    var input_date = document.getElementsByTagName("input")[0];
+    input_date.style.display = "none";
+
+    function show(vaule) {
+        if (vaule == 0) {
+            input_date.style.display = "none";
+        } else {
+            input_date.style.display = "block";
+        }
+    }
+</script>
 
 <span class="copyright">深圳小兵©<script>document.write(new Date().getFullYear())</script></span>
 </body>
